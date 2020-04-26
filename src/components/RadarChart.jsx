@@ -283,17 +283,17 @@ class RadarChart extends Component {
         if (this.state.inten_check) {
           x.push({
             label: "intensity",
-            backgroundColor: "rgba(230,132,34,0.2)",
+            backgroundColor: "rgba(130,32,32,0.2)",
             pointBackgroundColor: "rgba(130,32,32,1)",
             data: inten_data1,
-            borderColor: "rgba(12,12,216,1)"
+            borderColor: "rgba(130,32,32,1)"
           })
         }
         if (this.state.lkh_check) {
           x.push({
             label: "likelihood",
-            backgroundColor: "rgba(120,135,125,0.2)",
-            pointBackgroundColor: "rgba(220,100,50,1)",
+            backgroundColor: "rgba(230,34,34,0.2)",
+            pointBackgroundColor: "rgba(230,34,34,1)",
             data: like_data1,
             borderColor: "rgba(230,34,34,1)"
           })
@@ -301,8 +301,8 @@ class RadarChart extends Component {
         if (this.state.rele_check) {
           x.push({
             label: "relevance",
-            backgroundColor: "rgba(230,34,230,0.2)",
-            pointBackgroundColor: "rgba(100,120,220,1)",
+            backgroundColor: "rgba(132,234,34,0.2)",
+            pointBackgroundColor: "rgba(132,234,34,1)",
             data: rele_data1,
             borderColor: "rgba(132,234,34,1)"
           })
@@ -352,17 +352,17 @@ class RadarChart extends Component {
         if (this.state.inten_check) {
           x.push({
             label: "intensity",
-            backgroundColor: "rgba(230,34,230,0.2)",
+            backgroundColor: "rgba(12,12,216,0.2)",
             pointBackgroundColor: "rgba(12,12,216,1)",
             data: inten_data,
-            borderColor: "rgba(12,216,12,1)"
+            borderColor: "rgba(12,12,216,1)"
           })
         }
         if (this.state.lkh_check) {
           x.push({
             label: "likelihood",
-            backgroundColor: "rgba(120,135,125,0.2)",
-            pointBackgroundColor: "rgba(216,12,12,1)",
+            backgroundColor: "rgba(16,16,216,0.2)",
+            pointBackgroundColor: "rgba(16,16,216,1)",
             data: like_data,
             borderColor: "rgba(16,16,216,1)"
           })
@@ -370,8 +370,8 @@ class RadarChart extends Component {
         if (this.state.rele_check) {
           x.push({
             label: "relevance",
-            backgroundColor: "rgba(220,120,120,0.2)",
-            pointBackgroundColor: "rgba(225,225,9,1)",
+            backgroundColor: "rgba(12,12,216,0.4)",
+            pointBackgroundColor: "rgba(12,12,216,1)",
             data: rele_data,
             borderColor: "rgba(12,12,216,1)"
           })
@@ -420,7 +420,7 @@ class RadarChart extends Component {
         if (this.state.inten_check) {
           x.push({
             label: "intensity",
-            backgroundColor: "rgba(220,220,220,0.2)",
+            backgroundColor: "rgba(12,12,216,0.5)",
             pointBackgroundColor: "rgba(12,12,216,1)",
             data: inten_data,
             borderColor: "rgba(12,12,216,1)"
@@ -429,17 +429,17 @@ class RadarChart extends Component {
         if (this.state.lkh_check) {
           x.push({
             label: "likelihood",
-            backgroundColor: "rgba(120,135,125,0.2)",
+            backgroundColor: "rgba(216,12,12,0.6)",
             pointBackgroundColor: "rgba(216,12,12,1)",
             data: like_data,
-            borderColor: "rgba(16,16,216,1)"
+            borderColor: "rgba(216,12,12,1)"
           })
         }
         if (this.state.rele_check) {
           x.push({
             label: "relevance",
-            backgroundColor: "rgba(220,120,120,0.2)",
-            pointBackgroundColor: "rgba(225,225,9,1)",
+            backgroundColor: "rgba(14,14,216,0.4)",
+            pointBackgroundColor: "rgba(14,14,216,1)",
             data: rele_data,
             borderColor: "rgba(14,14,216,1)"
           })
@@ -488,17 +488,17 @@ class RadarChart extends Component {
         if (this.state.inten_check) {
           x.push({
             label: "intensity",
-            backgroundColor: "rgba(220,220,220,0.2)",
+            backgroundColor: "rgba(12,12,216,0.4)",
             pointBackgroundColor: "rgba(12,12,216,1)",
             data: inten_data,
-            borderColor: "rgba(12,17,216,1)"
+            borderColor: "rgba(12,12,216,1)"
           })
         }
         if (this.state.lkh_check) {
           x.push({
             label: "likelihood",
-            backgroundColor: "rgba(120,135,125,0.2)",
-            pointBackgroundColor: "rgba(216,12,12,1)",
+            backgroundColor: "rgba(10,120,10,0.4)",
+            pointBackgroundColor: "rgba(10,120,10,1)",
             data: like_data,
             borderColor: "rgba(10,120,10,1)"
           })
@@ -507,9 +507,9 @@ class RadarChart extends Component {
           x.push({
             label: "relevance",
             backgroundColor: "rgba(20,120,120,0.2)",
-            pointBackgroundColor: "rgba(225,125,9,1)",
+            pointBackgroundColor: "rgba(20,120,120,1)",
             data: rele_data,
-            borderColor: "rgba(16,16,216,1)"
+            borderColor: "rgba(20,120,120,1)"
           })
         }
         data2['datasets'] = x;
@@ -675,7 +675,7 @@ class RadarChart extends Component {
         </div>
         
         <div className="row" style={{marginTop:50}}>
-          <strong style={{fontSize: "large", textTransform: "capitalize", marginLeft: 12}}> Top Ten sectors</strong>
+                      <strong style={{fontSize: "large", textTransform: "capitalize", marginLeft: 12}}> Top Ten {this.state.filter_check}</strong>
         </div>
         
         <div className="row" style={{marginTop:60}}>
