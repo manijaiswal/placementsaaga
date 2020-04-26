@@ -311,6 +311,7 @@ class RadarChart extends Component {
 
       }
       else if (this.state.filter_check == "topic" && this.state.draw == "wordCloud") {
+        topTenTopic  = this.state.topic_top;
         for (var c = 0; c < this.state.topic_all[0].length; c++) {
           var word = {};
           if(this.state.selectedWord=="intensity"){
@@ -378,6 +379,7 @@ class RadarChart extends Component {
         data2['datasets'] = x;
       }
       else if (this.state.filter_check == "sector" && this.state.draw == "wordCloud") {
+        topTenTopic  = this.state.sector_top;
         for (var c = 0; c < this.state.sector_all[0].length; c++) {
           var word = {};
           if(this.state.selectedWord=="intensity"){
@@ -445,6 +447,7 @@ class RadarChart extends Component {
         data2['datasets'] = x;
       }
       else if (this.state.filter_check == "region" && this.state.draw == "wordCloud") {
+        topTenTopic  = this.state.region_top;
         for (var c = 0; c < this.state.region_all[0].length; c++) {
           var word = {};
           if(this.state.selectedWord=="intensity"){
@@ -512,6 +515,7 @@ class RadarChart extends Component {
         data2['datasets'] = x;
       }
       else if (this.state.filter_check == "pestle" && this.state.draw == "wordCloud") {
+        topTenTopic  = this.state.pestle_top;
         for (var c = 0; c < this.state.pestle_all[0].length; c++) {
           var word = {};
           if(this.state.selectedWord=="intensity"){
@@ -528,8 +532,6 @@ class RadarChart extends Component {
         }
       }
     }
-    console.log(words)
-
     return (
       <div>
         <div className="row" style={{ marginBottom: 10, marginTop: 10 }}>
@@ -551,7 +553,7 @@ class RadarChart extends Component {
                     <h3>Click on a node</h3>
                   </div>
                 </div>
-                <div className="card-box">
+                {/* <div className="card-box">
                   <h3 className="header-title m-t-0 m-b-5">Year Range <span id="radar_year_value"></span>
                     <span style={{ float: 'right' }}>
                       <label className="switch">
@@ -559,7 +561,7 @@ class RadarChart extends Component {
                       </label>
                     </span>
                   </h3>
-                </div>
+                </div> */}
               </div>
               <div className="col-sm-6">
                 <div className="card-box">
