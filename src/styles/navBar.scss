@@ -1,3 +1,4 @@
+
 $lato: "Lato", sans-serif;
 $mont: "Montserrat", sans-serif;
 $oswald: "Oswald", sans-serif;
@@ -9,98 +10,11 @@ $orange1: #ef958c;
 $orange2: #f3b07b;
 
 body, html {
-  background: #ddd;
+  background: white;
   font-family: Lato,sans-serif;
   overflow-x: hidden;
 }
 
-.info {
-  padding: .8rem 2.3rem;
-  background: #fff;
-  border-radius: 5px;
-  min-width: 12.4rem;
-  margin: 0 0 1rem;
-  color: #2a5697;
-  box-shadow: 3px 3px 3px rgba(0,0,0,.2);
-  text-align: center;
-}
-
-.heading {
-  background: #fff;
-  padding: 0.5rem 5rem 0.5rem 3rem;
-  color: $orange2;
-  display: inline-block;
-  border-radius: 50% 70% 0 0;
-}
-
-button.plus {
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  background: $orange2;
-  color: #fff;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border: none;
-  &:focus {
-    outline: none;
-  }
-}
-.but {
-  padding: 0.8rem 2.3rem;
-  color: #fff;
-  border: none;
-  text-decoration: none;
-  border-radius: 5px;
-  &:focus {
-    outline: none;
-  }
-  &.porange {
-    background: $orange2;
-  }
-  &.orange {
-    background-image: linear-gradient(to right, $orange2, $orange1);
-  }
-  &.blue {
-    background-image: linear-gradient(to right, $blue2, $blue1);
-  }
-  &.grad {
-    background-image: linear-gradient(to right, #27c391, #2172c6);
-  }
-  &.white {
-    background: #fff;
-    border: 1px solid #ccc;
-    color: #555;
-    box-sizing: border-box;
-    border: 0.2rem solid transparent;
-    transition: border 0.2s;
-    &:hover {
-      color: #555;
-      border: 0.2rem solid $orange1;
-    }
-  }
-  &.sm {
-    padding: 0.4rem 1.2rem;
-  }
-  &.lg {
-    font-size: 1.5rem;
-    padding: 0.9rem 5rem;
-  }
-  &:hover {
-    text-decoration: none;
-    color: #fff;
-  }
-  &.fixed {
-    width: 9rem;
-  }
-}
-.link {
-  text-decoration: none;
-  color: $orange2;
-  &:hover {
-    color: $orange1;
-  }
-}
 
 
 nav.navbar {
@@ -126,7 +40,7 @@ nav.navbar > svg {
   }
   
   nav.navbar a {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #fff;
     position: relative;
   }

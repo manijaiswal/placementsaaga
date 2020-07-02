@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Root from './components/Root';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
   <React.StrictMode>

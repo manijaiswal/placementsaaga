@@ -23,7 +23,12 @@ class NavBar extends Component {
           </defs>
         </svg>
         <a className="navbar-brand" href="#">
-          <img src="/img/logo.png" />
+            <div class="logo-container">
+              <div class="logo-text">
+                <div class="logo-text-line1">Placement</div>
+              <div class="logo-text-line2">Saga</div>
+            </div>
+          </div>
         </a>
         <button
           className="navbar-toggler"
@@ -39,16 +44,31 @@ class NavBar extends Component {
           id="navbarSupportedContent"
         >
           <ul className="nav-menu list-unstyled d-flex flex-md-row flex-sm-column flex-end">
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" to="/">
-                Radar
+                Question Library
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/word-cloud">
-                Word Cloud
+              <Link className="nav-link" to="/">
+                Mock Tests
               </Link>
-            </li> */}
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Theory Series
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Subscribe
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Login
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
