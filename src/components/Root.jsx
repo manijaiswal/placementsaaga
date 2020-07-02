@@ -1,6 +1,7 @@
 import React,{Component}from 'react';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
-import NavBar from './utils/NavBar';
+// import NavBar from './utils/NavBar';
+import Nav from './utils/Nav';
 import App from '../App';
 
 
@@ -8,7 +9,7 @@ import App from '../App';
 const RenderComponent = ({Comp,props,routerProps})=>{
     return (
         <div>
-            <NavBar />
+            <Nav />
             <div className={'main_container'}>
                 <Comp {...props}  {...routerProps} />
             </div>

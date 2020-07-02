@@ -190,14 +190,14 @@ class App extends React.Component {
                 </p>
                 </div>
                 <div className="col-md-12">
-                  <h2 className="hero-text">
+                  <p className="hero-text">
                     destinity with
-                </h2>
+                  </p>
                 </div>
                 <div className="col-md-12">
-                  <h2 className="hero-text">
+                  <p className="hero-text">
                     <strong>placementSaaga</strong>
-                  </h2>
+                  </p>
                 </div>
                 <div className="btn-container" style={{ marginTop: 20, marginLeft: 10 }}>
                   <a className="hero-btn" href="/ques/90 Degree Shift">View Sample Question</a>
@@ -215,7 +215,7 @@ class App extends React.Component {
                 </div>
                 {/* <div className="landing__jumbo-carousel-image-notch"></div> */}
               </div>
-              <div className="carousel-text">
+              <div className="carousel-text  .d-sm-none .d-md-block">
                 <div className="carousel-text-content">
                   <span className="carousel-animate">{this.state.text1}</span>
                 </div>
@@ -299,7 +299,7 @@ class App extends React.Component {
           </div>
         </div>
 
-        <div className="container_head">
+        <div className="container_head ">
           <div className="topics2-heading">
             Every Topic You need for your<br /><strong>Coding Interview</strong>
           </div>

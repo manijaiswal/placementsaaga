@@ -1,3 +1,43 @@
+.nav_link {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  font-family: Comfortaa;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.logo_cont{
+  color: #000!important;
+  font-family: Comfortaa;
+  font-weight: 800;
+}
+.btn-login {
+  background: -webkit-gradient(linear,left top,right top,from(#5e81f4),to(#1c67da));
+  background: -webkit-linear-gradient(left,#5e81f4,#1c67da);
+  background: linear-gradient(90deg,#5e81f4,#1c67da);
+  border-radius: 7.3px;
+  color: #fff !important;
+  border: none;
+  height: 49px;
+  width: 120px;
+  font-size: 17px;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+  overflow: hidden;
+  text-align: center;
+}
+
 .hero-text {
     font-size: 3.4rem;
     font-weight: 100;
@@ -234,7 +274,6 @@
 }
 .video-subheading {
   width: 60%;
-  min-width: 860px;
   margin: 1rem auto;
   font-size: 16.6px;
   text-align: center;
@@ -285,16 +324,213 @@
 
 
 @media screen and (max-width: 991px){
-  .landing__jumbo-hero-text {
+  .hero-text {
     font-size: 3.4rem;
     text-align: center;
   }
 }
 
-
-@media screen and (max-width: 1050px){
-  .landing__jumbo-hero-text {
-    font-size: 3.1rem;
+@media (min-width: 992px){
+  .nav_link{
+    padding-right: 3.5rem !important;
+    padding-left: 3.7rem !important;
   }
 }
+
+@media screen and (max-width: 1050px){
+  .hero-text {
+    font-size: 2.1rem;
+  }
+}
+
+
+@media screen and (max-width: 380px){
+  .carousel-images {
+    width: 318px;
+  }
+  .carousel-image{
+    height: 210px;
+          width: 150px;
+  }
+  .carousel-text{
+    width: 150px;
+    height: 210px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 420px){
+.carousel-images {
+    width: 365px;
+}
+.carousel-image{
+  height: 215px;
+  width: 165px;
+}
+.carousel-text{
+  height: 215px;
+  width: 165px;
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 480px){
+  .carousel-images {
+    width: 400px;
+  }
+  .carousel-image{
+    width: 180px;
+          height: 245px;
+  }
+  .carousel-text{
+    width: 180px;
+    height: 245px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .carousel-images {
+    width: 440px;
+  }
+  .carousel-image{
+    width: 200px;
+    height: 270px;
+  }
+  .carousel-text{
+    width: 200px;
+    height: 270px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+@media screen and (max-width: 600px){
+  .carousel-images {
+    width: 460px;
+  }
+  .carousel-image {
+    width: 210px;
+    height: 290px;
+  }
+  .carousel-text{
+    width: 210px;
+          height: 290px;
+          font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .carousel-images {
+    width: 480px;
+}
+.carousel-image{
+  width: 221px;
+          height: 300px;
+}
+.carousel-text{
+  width: 221px;
+  height: 300px;
+  font-size: 22px;
+}
+}
+
+@media screen and (max-width: 991px){
+  .carousel-images {
+    margin: 0 auto;
+    width: 520px;
+}
+.carousel-image{
+  width: 241px;
+  height: 331px;
+}
+.carousel-text{
+  width: 241px;
+  height: 331px;
+  font-size: 23px;
+}
+}
+
+@media screen and (max-width: 1050px){
+  .carousel-images {
+    width: 460px;
+}
+.carousel-image{
+
+}
+.carousel-text{
+  width: 210px;
+  height: 290px;
+  font-size: 21px;
+}
+}
+
+@media screen and (max-width: 1080px){
+  .carousel-images {
+    width: 480px;
+}
+.carousel-image{
+
+}
+.carousel-text{
+  width: 221px;
+  height: 300px;
+  font-size: 22px;
+}
+}
+
+@media screen and (max-width: 1150px){
+  .carousel-images {
+    width: 520px;
+    margin-left: 1rem;
+  }
+  .carousel-image {
+    width: 241px;
+    height: 331px;
+}
+.carousel-text{
+
+}
+}
+
+@media screen and (max-width: 1180px){
+  .carousel-images {
+    margin-left: 0;
+  }
+  .carousel-image{
+
+  }
+  .carousel-text{
+    width: 241px;
+    height: 331px;
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1225px){
+  .carousel-images {
+    width: 560px;
+  }
+  .carousel-image {
+    width: 261px;
+    height: 371px;
+}
+.carousel-text{
+  width: 261px;
+  height: 371px;
+  font-size: 24px;
+}
+
+}
+
+@media screen and (max-width: 1280px){
+  .carousel-images {
+    margin-left: 1rem;
+  }
+  .carousel-image{
+
+  }
+  .carousel-text{
+
+  }
+}
+
 
