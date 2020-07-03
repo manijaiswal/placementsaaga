@@ -5,17 +5,17 @@ const images = [
   {
     img:'/compu.png',
     text:'Final Touch with company specific questions',
-    text2:"MOCK TEST"
+    text2:"MOCK  \n TEST"
   },
   {
     img:'/man.svg',
     text:'Mock test of 250 Companies and solved solutions',
-    text2:"HIGHLY QUALIFIED MENTORS"
+    text2:"HIGHLY \n QUALIFIED \n MENTORS"
   },
   {
     img:'/corosal1.svg',
     text:'HIGHLY QUALIFIED MENTORS FROM LEADING TECH GIANTS.',
-    text2:"QUESTION LIBRARY"
+    text2:"QUESTION \n LIBRARY"
   }
 ]
 
@@ -184,10 +184,10 @@ class App extends React.Component {
           <div className="row">
             <div className="col-md-6">
               <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-12" style={{padding:'2%'}}>
                   <p className="hero-text">
                     Master Your
-                </p>
+                  </p>
                 </div>
                 <div className="col-md-12">
                   <p className="hero-text">
@@ -195,11 +195,11 @@ class App extends React.Component {
                   </p>
                 </div>
                 <div className="col-md-12">
-                  <p className="hero-text">
+                  <p className="hero-text" style={{fontWeight:900}}>
                     <strong>placementSaaga</strong>
                   </p>
                 </div>
-                <div className="btn-container" style={{ marginTop: 20, marginLeft: 10 }}>
+                <div className="btn-container col-md-12" style={{ marginTop: 20, marginLeft: 10 }}>
                   <a className="hero-btn" href="/ques/90 Degree Shift">View Sample Question</a>
                 </div>
               </div>
@@ -211,15 +211,24 @@ class App extends React.Component {
                   <img src={this.state.bg} alt="" />
                 </div>
                 <div className="carousel-image-text">
-                  <span style={{color:'#1c67da'}}>{this.state.text2}</span>
+                  <span style={{color:'#1c67da'}} > 
+                    {this.state.text2.split('\n').map((text,index)=>{
+                      return (
+                        <React.Fragment key={`${text}-${index}`}>
+                          {text}
+                          <br />
+                        </React.Fragment>
+                      )
+                    })}
+                  </span>
                 </div>
-                {/* <div className="landing__jumbo-carousel-image-notch"></div> */}
+                <div className="landing__jumbo-carousel-image-notch"></div>
               </div>
-              <div className="carousel-text  .d-sm-none .d-md-block">
+              <div className="carousel-text">
                 <div className="carousel-text-content">
                   <span className="carousel-animate">{this.state.text1}</span>
                 </div>
-                {/* <div className="landing__jumbo-carousel-text-notch"></div> */}
+                <div className="landing__jumbo-carousel-text-notch"></div>
               </div>
               </div>
             </div>
